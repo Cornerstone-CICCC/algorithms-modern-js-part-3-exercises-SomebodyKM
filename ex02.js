@@ -4,7 +4,10 @@
 // Test your function with different numbers of arguments.
 
 function subtract(...numbers) {
-  // Your code here
+
+  return numbers.reduce((total, currentNum) => total - currentNum)
+
 }
 
 console.log(subtract(10, 2, 3)); // Example usage
+console.log(subtract(0))
